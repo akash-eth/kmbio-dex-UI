@@ -1,0 +1,7 @@
+[build]
+  base = "/"
+  publish = "build"
+  command = "npm install --force && CI=false npm run build"
+
+[context.production.environment]
+  NODE_ENV = "production"
